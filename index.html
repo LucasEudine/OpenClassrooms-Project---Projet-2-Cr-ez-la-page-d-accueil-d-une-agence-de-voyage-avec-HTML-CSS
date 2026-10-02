@@ -23,159 +23,155 @@
   <body>
     <div class="main-container">
       <header>
-        <nav>
-          <img src="./images/logo/Booki.png" alt="logo du site Booki" />
-          <div>
-            <a href="">Hébergements</a>
-            <a href="">Activités</a>
+        <nav class="navbar">
+          <a href="index.html"> <img class="navbar-logo" src="./images/logo/Booki.png" alt="logo du site Booki" /> </a>
+          <div class="navbar-links">
+            <a href="#">Hébergements</a>
+            <a href="#">Activités</a>
           </div>
         </nav>
       </header>
+
       <main>
         <div>
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre-ville ou en pleine nature</p>
-          <div>
-            <img
-              src="./images/icons/searchbar_icon.png"
-              alt="Icône barre de recherche"
-            />
-            <label for="nom"></label>
-            <input type="text" id="nom" />
-            <input type="submit" value="Rechercher" />
-          </div>
-          <div>
+          <p class="h1-description">En plein centre-ville ou en pleine nature</p>
+          <form class="place-search-bar">
+            <img src="./images/icons/searchbar_icon.png" alt="Icône barre de recherche"/>
+            <label class="hidden-label" for="nom">Ville</label>
+            <input type="text" id="nom" class="input-search-zone" placeholder="Chercher une ville"/>
+            <input class="input-search-button" type="submit" value="Rechercher"/>
+          </form>
+        
+          <div class="filters">
             <h2>Filtres</h2>
-            <div>
-              <img
-                src="./images/icons/economique_icon.png"
-                alt="Icône pour le filtre économique"
-              />
-              <input type="submit" value="Economique" />
-            </div>
-            <div>
-              <img
-                src="./images/icons/familial_icon.png"
-                alt="Icône pour le filtre familial"
-              />
-              <input type="submit" value="Familial" />
-            </div>
-            <div>
-              <img
-                src="./images/icons/romantique_icon.png"
-                alt="Icône pour le filtre romantique"
-              />
-              <input type="submit" value="Romantique" />
-            </div>
-            <div>
-              <img
-                src="./images/icons/nos-pepites_icon.png"
-                alt="Icône pour le filtre nos pépites"
-              />
-              <input type="submit" value="Nos pépites" />
-            </div>
-          </div>
-          <p>
-            <img
-              src="./images/icons/information_icon.png"
-              alt="Icône d'information"
-            />
-            Plus de X logements sont disponibles dans cette ville
-          </p>
-        </div>
+            <button type="button" onclick="alert('le bouton économique fonctionne')">
+              <img src="./images/icons/economique_icon.png" alt="Icône pour le filtre économique"/>
+              Economique
+            </button>
 
+            <button type="button">
+              <img src="./images/icons/familial_icon.png" alt="Icône pour le filtre familial"/>
+              Familial
+            </button>
+
+            <button type="button">
+              <img src="./images/icons/romantique_icon.png" alt="Icône pour le filtre romantique"/>
+              Romantique
+            </button>
+
+            <button type="button">
+              <img src="./images/icons/nos-pepites_icon.png" alt="Icône pour le filtre nos pépites"/>
+              Nos pépites
+            </button>
+          </div>
+          <p class="info-message"> <img src="./images/icons/information_icon.png" alt="Icône d'information"/> Plus de X logements sont disponibles dans cette ville</p>
+        </div>
+        
         <div class="hebergements-and-populaires">
           <section class="hebergements">
-            <div>
+            
                 <h2>Hébergements à "Nom_Ville"</h2>
-                <div>
-                    <article>
-                        <img src=".\images\hebergements\fred-kleber.jpg" alt="Image de l'hébergement">
-                        <h3>Nom de l'hébergement</h3>
-                        <p>Nuit à partir de X€</p>
-                        <div class="card-rating">
+                <div class="hebergements-cards">
+                    <article class="card-hebergement">
+                        <img src="./images/hebergements/fred-kleber.jpg" alt="Image de l'hébergement">
+                        <div class="card-hebergements-content">
+                          <h3>Nom de l'hébergement</h3>
+                          <p>Nuit à partir de X€</p>
+                          <div class="card-hebergements-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
                         </div>
                     </article>
 
-                    <article>
-                        <img src=".\images\hebergements\febrian-zakaria.jpg" alt="Image de l'hébergement">
-                        <h3>Nom de l'hébergement</h3>
-                        <p>Nuit à partir de X€</p>
-                        <div class="card-rating">
+                    <article class="card-hebergement">
+                        <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de l'hébergement">
+                        <div class="card-hebergements-content">
+                          <h3>Nom de l'hébergement</h3>
+                          <p>Nuit à partir de X€</p>
+                          <div class="card-hebergements-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
                         </div>
                     </article>
 
-                    <article>
-                        <img src=".\images\hebergements\reisetopia.jpg" alt="Image de l'hébergement">
-                        <h3>Nom de l'hébergement</h3>
-                        <p>Nuit à partir de X€</p>
-                        <div class="card-rating">
+                    <article class="card-hebergement">
+                        <img src="./images/hebergements/reisetopia.jpg" alt="Image de l'hébergement">
+                        <div class="card-hebergements-content">
+                          <h3>Nom de l'hébergement</h3>
+                          <p>Nuit à partir de X€</p>
+                          <div class="card-hebergements-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
                         </div>
                     </article>
 
-                    <article>
-                        <img src=".\images\hebergements\annie-spratt.jpg" alt="Image de l'hébergement">
-                        <h3>Nom de l'hébergement</h3>
-                        <p>Nuit à partir de X€</p>
-                        <div class="card-rating">
+                    <article class="card-hebergement">
+                        <img src="./images/hebergements/annie-spratt.jpg" alt="Image de l'hébergement">
+                        <div class="card-hebergements-content">
+                          <h3>Nom de l'hébergement</h3>
+                          <p>Nuit à partir de X€</p>
+                          <div class="card-hebergements-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
                         </div>
                     </article>
 
-                    <article>
-                        <img src=".\images\hebergements\marcus-loke.jpg" alt="Image de l'hébergement">
-                        <h3>Nom de l'hébergement</h3>
-                        <p>Nuit à partir de X€</p>
-                        <div class="card-rating">
+                    <article class="card-hebergement">
+                        <img src="./images/hebergements/marcus-loke.jpg" alt="Image de l'hébergement">
+                        <div class="card-hebergements-content">
+                          <h3>Nom de l'hébergement</h3>
+                          <p>Nuit à partir de X€</p>
+                          <div class="card-hebergements-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
                         </div>
                     </article>
 
-                    <article>
-                        <img src=".\images\hebergements\nicate-lee.jpg" alt="Image de l'hébergement">
-                        <h3>Nom de l'hébergement</h3>
-                        <p>Nuit à partir de X€</p>
-                        <div class="card-rating">
+                    <article class="card-hebergement">
+                        <img src="./images/hebergements/nicate-lee.jpg" alt="Image de l'hébergement">
+                        <div class="card-hebergements-content">
+                          <h3>Nom de l'hébergement</h3>
+                          <p>Nuit à partir de X€</p>
+                          <div class="card-hebergements-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
                         </div>
                     </article>
-                    <a href="#">Afficher plus</a>
                 </div>
-            </div>
+                <a class="afficher-plus" href="#">Afficher plus</a>
           </section>
+
 
           <section class="populaires">
             <div class="populaires-title">
@@ -269,28 +265,61 @@
             </div>
           </section>
         </div>
+
+        <div class="activites">
+          <h2>Activités à "Nom_Ville"</h2>
+          <div class="activites-cards">
+            <article class="card-activites">
+              <img src="./images/activites/reno-laithienne.jpg" alt="Reno Laithienne">
+              <h3>Vieux Port</h3>
+            </article>
+            <article class="card-activites">
+              <img src="./images/activites/paul-hermann.jpg" alt="Paul Hermann">
+              <h3>Fort de Pomègues</h3>
+            </article>
+            <article class="card-activites">
+              <img src="./images/activites/kilyan-sockalingum.jpg" alt="Kilyan Sockalingum">
+              <h3>Parc national des Calanques</h3>
+            </article>
+            <article class="card-activites">
+              <img src="./images/activites/florian-wehde.jpg" alt="Florian Wehde">
+              <h3>Notre-Dame-de-la-Garde</h3>
+            </article>
+          </div>
+        </div>
       </main>
 
+
+
+
+
       <footer>
-        <section>
-            <h2>À propos</h2>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Conditions générales</a>
-            <a href="#">Données et confidentialité</a>
-        </section>
+        <div class="footer-container">
+          <section class="footer-list">
+              <h2>À propos</h2>
+              <div class="footer-list-links">
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales</a>
+                <a href="#">Données et confidentialité</a>
+              </div>
+          </section>
 
-        <section>
-            <h2>Nos hébergements</h2>
-            <a href="#">Charte qualité</a>
-            <a href="#">Proposer votre hôtel</a>
-        </section>
+          <section class="footer-list">
+              <h2>Nos hébergements</h2>
+              <div class="footer-list-links">
+                <a href="#">Charte qualité</a>
+                <a href="#">Proposer votre hôtel</a>
+              </div>
+          </section>
 
-        <section>
-            <h2>Assisstance</h2>
-            <a href="#">Centre d'aide</a>
-            <a href="#">Nous contacter</a>
-        </section>
-
+          <section class="footer-list">
+              <h2>Assistance</h2>
+              <div class="footer-list-links">
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+              </div>
+          </section>
+        </div>
       </footer>
 
     </div>
