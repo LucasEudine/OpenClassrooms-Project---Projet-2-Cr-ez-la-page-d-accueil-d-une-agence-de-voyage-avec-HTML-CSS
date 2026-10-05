@@ -36,7 +36,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .navbar div {
@@ -45,7 +45,8 @@ a {
 }
 
 .navbar-logo {
-    width: 70px;
+    width: 60px;
+    margin-top: 25px;
 }
 
 .navbar-links a {
@@ -60,23 +61,28 @@ a {
 
 /****** Recherche ***********/
 h1 {
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .h1-description {
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 22px;
 }
 
 .place-search-bar {
     display: flex;
     align-items: center;
     height: 60px;
+    margin-bottom: 25px;
 }
 
 .place-search-bar img {
     background-color: var(--main-bg-color);
-    padding: 10px;
-    border-radius: 5px 0px 0px 5px;
+    padding: 18px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .hidden-label {
@@ -84,14 +90,14 @@ h1 {
 }
 
 .place-search-bar input {
-    padding: 10px;
+    padding: 18px;
     border: 1px solid var(--main-bg-color);
     font-weight: normal;
 }
 
 .input-search-zone::placeholder {
     font-weight: bold;
-    opacity: 0.5;
+    font-size: 16px;
 }
 
 .input-search-button {
@@ -99,6 +105,7 @@ h1 {
     border-radius: 0px 15px 15px 0px;
     color: white;
     font-weight: bold;
+    font-size: 16px;
 }
 
 /****** Filtres ***********/
@@ -106,12 +113,12 @@ h1 {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .filters h2 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .filters button {
@@ -121,17 +128,23 @@ h1 {
     background-color: white;
     border: 2px solid var(--main-bg-color);
     border-radius: 20px;
-    padding: 7px 15px;
+    padding: 10px 20px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
+}
+
+.filters button:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .info-message {
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 12px;
+    gap: 10px;
+    font-size: 16px;
     margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 40px;
 }
 
 /****** General cards ***********/
@@ -180,17 +193,13 @@ h1 {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-}
-
-.hebergements {
-    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .hebergements h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 0;
     margin-bottom: 25px;
 }
@@ -198,47 +207,52 @@ h1 {
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
 .card-hebergement {
     width: 100%;
     padding: 5px;
-    padding-bottom: 30px;
     box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
+.card-hebergements-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card-hebergement img {
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
 .card-hebergements-content h3 {
-    font-size: 12px;
+    font-size: 16px;
     margin: 4px 0;
     padding-left: 10px;
 }
 
 .card-hebergements-content p {
-    font-size: 11px;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 5px 0;
     padding-left: 10px;
 }
 
 .card-hebergements-rating {
-    margin-top: 10px;
     padding-left: 10px;
+    padding-bottom: 5px;
 }
 
 .afficher-plus {
-    padding-top: 20px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 /****** Populaires ***********/
@@ -288,9 +302,9 @@ h1 {
 
 /****** Activites ***********/
 .activites h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .activites {
@@ -298,13 +312,14 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 40px;
     margin-left: 20px;
 }
 
 .activites-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .card-activites {
@@ -314,16 +329,17 @@ h1 {
 }
 
 .card-activites img {
-    width: 220px;
-    height: 300px;
+    width: 305px;
+    height: 400px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
 .card-activites h3 {
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 10px;
     background-color: white;
+    margin-left: 5px;
 }
 
 .activites-cards article {
@@ -335,14 +351,15 @@ h1 {
     display: flex;
     flex-direction: row;
     background-color: var(--main-bg-color);
-    padding: 40px;
-    margin-top: 35px;
+    padding-bottom: 20px;
+    margin-top: 50px;
 }
 
 .footer-list {
     display: flex;
     flex-direction: column;
-    padding: 0px 100px;
+    padding-right: 225px;
+    padding-left: 25px;
     font-size: 18px;
 }
 
@@ -350,12 +367,14 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 16px;
     gap: 10px;
 }
 
 .footer-list h2 {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
