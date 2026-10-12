@@ -288,7 +288,8 @@ h1 {
 
 .populaires-cards img {
     width: 33%;
-    height: 100%;
+    height: auto;
+    align-self: stretch;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
@@ -482,6 +483,11 @@ h1 {
     .populaires-cards .card-content {
         padding-left: 10px;
         gap: 50px;
+    }
+
+    .populaires-cards img {
+        height: auto;
+        align-self: stretch;
     }
     
     
@@ -706,7 +712,8 @@ h1 {
 
     .populaires-cards img {
         width: 120px;
-        height: 160px;
+        height: auto;
+        align-self: stretch;
         border-radius: 15px 0px 0px 15px;
         object-fit: cover;
     }
