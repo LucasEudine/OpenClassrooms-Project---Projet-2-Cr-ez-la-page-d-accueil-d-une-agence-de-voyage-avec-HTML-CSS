@@ -26,8 +26,8 @@
         <nav class="navbar">
           <a href="index.html"> <img class="navbar-logo" src="./images/logo/Booki.png" alt="logo du site Booki" /> </a>
           <div class="navbar-links">
-            <a href="#">Hébergements</a>
-            <a href="#">Activités</a>
+            <a class="nav-hebergement" href="#">Hébergements</a>
+            <a class="nav-activites" href="#">Activités</a>
           </div>
         </nav>
       </header>
@@ -45,25 +45,27 @@
         
           <div class="filters">
             <h2>Filtres</h2>
-            <button type="button" onclick="alert('le bouton économique fonctionne')">
-              <img src="./images/icons/economique_icon.png" alt="Icône pour le filtre économique"/>
-              Economique
-            </button>
+            <div class="filter-buttons">
+              <button type="button" onclick="alert('le bouton économique fonctionne')">
+                <img src="./images/icons/economique_icon.png" alt="Icône pour le filtre économique"/>
+                Economique
+              </button>
 
-            <button type="button">
-              <img src="./images/icons/familial_icon.png" alt="Icône pour le filtre familial"/>
-              Familial
-            </button>
+              <button type="button">
+                <img src="./images/icons/familial_icon.png" alt="Icône pour le filtre familial"/>
+                Familial
+              </button>
 
-            <button type="button">
-              <img src="./images/icons/romantique_icon.png" alt="Icône pour le filtre romantique"/>
-              Romantique
-            </button>
+              <button type="button">
+                <img src="./images/icons/romantique_icon.png" alt="Icône pour le filtre romantique"/>
+                Romantique
+              </button>
 
-            <button type="button">
-              <img src="./images/icons/nos-pepites_icon.png" alt="Icône pour le filtre nos pépites"/>
-              Nos pépites
-            </button>
+              <button type="button">
+                <img src="./images/icons/nos-pepites_icon.png" alt="Icône pour le filtre nos pépites"/>
+                Nos pépites
+              </button>
+            </div>
           </div>
           <p class="info-message"> <img src="./images/icons/information_icon.png" alt="Icône d'information"/> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
@@ -189,7 +191,7 @@
                     <div class="card-txt">
                       <h3 class="card-title">Hôtel Le soleil du matin</h3>
                       <p class="card-subtitle">
-                        Nuit à partir de 25<span class="euro">€</span>
+                        Nuit à partir de 128<span class="euro">€</span>
                       </p>
                     </div>
                     <div class="card-rating">
